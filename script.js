@@ -2,13 +2,13 @@
 function checkPasscode(){
 const input=document.getElementById("passcode").value;
 const error=document.getElementById("error");
-//const today=new Date();
-//const unlock=new Date("2026-01-01");
+const today=new Date();
+const unlock=new Date("2026-01-01");
 
-//if(today<unlock){
-//error.innerHTML="⏳ Opens on 1st January 2026 🧿";
-//return;
-//}
+if(today<unlock){
+error.innerHTML="⏳ Opens on 1st January 2026 🧿";
+return;
+}
 
 if(input==="Chubu2026" || input==="CHUBU2026" || input==="chubu2026"){
 window.location.href="fireworks.html";
